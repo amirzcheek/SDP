@@ -2,9 +2,11 @@ package ASS2;
 
 
 public abstract class Device {
-    private String name;
+
+    protected String name;
 
     public Device() {
+        this.name = "Device";
     }
 
     public Device(String name) {
@@ -12,7 +14,5 @@ public abstract class Device {
     }
 
     public abstract void getInfo();
-
-
 
 }

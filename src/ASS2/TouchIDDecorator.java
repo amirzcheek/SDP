@@ -4,12 +4,12 @@ public class TouchIDDecorator extends DeviceDecorator{
     Device device;
 
     public TouchIDDecorator(Device device) {
-        this.device = device;
+        super(device);
     }
 
     @Override
     public void getInfo() {
-        device.getInfo();
-        System.out.print("Touch ID authentication ");
+        super.getInfo();
+        System.out.print(", Touch ID authentication");
     }
 }

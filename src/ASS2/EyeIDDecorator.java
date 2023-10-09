@@ -1,15 +1,14 @@
 package ASS2;
 
 public class EyeIDDecorator extends DeviceDecorator {
-    Device device;
 
     public EyeIDDecorator(Device device) {
-        this.device = device;
+        super(device);
     }
 
     @Override
     public void getInfo() {
-        device.getInfo();
-        System.out.print("Eye ID authentication ");
+        super.getInfo();
+        System.out.print(", Eye ID authentication ");
     }
 }

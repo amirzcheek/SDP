@@ -5,7 +5,7 @@ public abstract class Device {
     private String name;
     private AuthenticationPrincipe authenticationPrincipe;
 
-    public Device(String name, AuthenticationPrincipe authenticationPrincipe) {
+    public Device(String name, AuthenticationPrincipe authenticationPrincipe) { // [new faceid]
         this.name = name;
         this.authenticationPrincipe = authenticationPrincipe;
     }

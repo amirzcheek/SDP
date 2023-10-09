@@ -1,7 +1,14 @@
 package ASS2;
 
-public abstract class DeviceDecorator extends Device{
+public class DeviceDecorator extends Device{
+    Device device;
+
+    public DeviceDecorator(Device device) {
+        this.device = device;
+    }
 
     @Override
-    public abstract void getInfo();
+    public void getInfo(){
+        device.getInfo();
+    }
 }

@@ -4,12 +4,12 @@ public class FaceIDDecorator extends DeviceDecorator{
     Device device;
 
     public FaceIDDecorator(Device device) {
-        this.device = device;
+        super(device);
     }
 
     @Override
     public void getInfo() {
-        device.getInfo();
-        System.out.print("Face ID authentication ");
+        super.getInfo();
+        System.out.print(", Face ID authentication");
     }
 }
