@@ -1,9 +1,8 @@
 package ASS2;
 
 public class TouchIDDecorator extends DeviceDecorator{
-    Device device;
 
-    public TouchIDDecorator(Device device) {
+    public TouchIDDecorator(IDevice device) {
         super(device);
     }
 

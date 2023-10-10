@@ -1,9 +1,9 @@
 package ASS2;
 
 public class DeviceDecorator implements IDevice{
-    Device device;
+    IDevice device;
 
-    public DeviceDecorator(Device device) {
+    public DeviceDecorator(IDevice device) {
         this.device = device;
     }
 

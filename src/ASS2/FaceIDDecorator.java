@@ -1,9 +1,8 @@
 package ASS2;
 
 public class FaceIDDecorator extends DeviceDecorator{
-    Device device;
 
-    public FaceIDDecorator(Device device) {
+    public FaceIDDecorator(IDevice device) {
         super(device);
     }
 

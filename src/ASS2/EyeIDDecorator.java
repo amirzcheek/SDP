@@ -2,7 +2,7 @@ package ASS2;
 
 public class EyeIDDecorator extends DeviceDecorator {
 
-    public EyeIDDecorator(Device device) {
+    public EyeIDDecorator(IDevice device) {
         super(device);
     }
 

@@ -7,8 +7,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         Device GalaxyS22 = new Android();
-        Device galaxy = new FaceIDDecorator(GalaxyS22);
-        Device megaPhone = new EyeIDDecorator(new TouchIDDecorator(new FaceIDDecorator(new MegaPhone())));
+        IDevice galaxy = new FaceIDDecorator(GalaxyS22);
+        IDevice megaPhone = new EyeIDDecorator(new TouchIDDecorator(new FaceIDDecorator(new MegaPhone())));
 
 
 
