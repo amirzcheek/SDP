@@ -1,6 +1,6 @@
 package ASS2;
 
-public class DeviceDecorator extends Device{
+public class DeviceDecorator implements IDevice{
     Device device;
 
     public DeviceDecorator(Device device) {
@@ -11,4 +11,6 @@ public class DeviceDecorator extends Device{
     public void getInfo(){
         device.getInfo();
     }
+
+
 }

@@ -10,6 +10,8 @@ public class Main {
         Device galaxy = new FaceIDDecorator(GalaxyS22);
         Device megaPhone = new EyeIDDecorator(new TouchIDDecorator(new FaceIDDecorator(new MegaPhone())));
 
+
+
         Device megaPhone2 = new MegaPhone("Phone3000");
 
         galaxy.getInfo();
@@ -25,7 +27,9 @@ public class Main {
             System.out.println("Do you want to remove EyeID from this device? \n 1 -> yes \n 2 -> no");
             int choice = scanner.nextInt();
             if (choice == 1){
-                megaPhone = new TouchIDDecorator(new FaceIDDecorator(new MegaPhone()));
+                System.out.println(megaPhone);
+                System.out.println(((EyeIDDecorator) megaPhone));
+                megaPhone = ((EyeIDDecorator) megaPhone);
             }
         }
         megaPhone.getInfo();

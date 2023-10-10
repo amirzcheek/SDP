@@ -1,7 +1,7 @@
 package ASS2;
 
 
-public abstract class Device {
+public class Device implements IDevice {
 
     protected String name;
 
@@ -13,6 +13,8 @@ public abstract class Device {
         this.name = name;
     }
 
-    public abstract void getInfo();
-
+    @Override
+    public void getInfo() {
+        System.out.println("Device");
+    }
 }
